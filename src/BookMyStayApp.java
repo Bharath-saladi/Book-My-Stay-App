@@ -9,7 +9,6 @@ class BookingRequest {
         this.roomType = roomType;
     }
 }
-
 class InventoryService {
 
     // Room type -> available count
@@ -18,7 +17,6 @@ class InventoryService {
     // Room type -> allocated room IDs
     private Map<String, Set<String>> allocatedRooms = new HashMap<>();
 
-    // Global set to guarantee uniqueness
     private Set<String> allocatedRoomIds = new HashSet<>();
 
     public InventoryService() {
